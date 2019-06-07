@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+    <script>
+        "use strict"
+
+
+// Задание 5
+
+
+    mathOperation(12, 31, 4);
+
+
+    
+    function mathOperation(arg1, arg2, operation){ 
+        
+        switch(operation){
+                case 1:
+                    const sum = arg1 + arg2;
+                    alert("Результат сложения " + sum);
+                    return sum;
+                break;
+                case 2:
+                    const min = arg1 - arg2;
+                    alert("Результат вычитания " + min);
+                    return min;
+                break;
+                case 3:
+                    const mult = arg1 * arg2;
+                    alert("Результат умножения " + mult);
+                    return mult;
+                break;
+                case 4:
+                    const divi = arg1 / arg2;
+                    alert("Результат деления " + divi);
+                    return divi;
+                break;
+                return;
+                }
+    }
+    
+  console.log(mathOperation(12, 31, 4));
+
+    </script>
