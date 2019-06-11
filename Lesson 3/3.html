@@ -1,0 +1,26 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+const products = [
+ {
+ id: 3,
+ price: 200,
+ },
+ {
+ id: 4,
+ price: 900,
+ },
+ {
+ id: 1,
+ price: 1000,
+ },
+ ];
+
+ // Я очень долго не мог решить это задание, поскольку не знаю свойства "ITEM". Пришлось подсмотреть(((
+
+const sales = products.map(item => item.price - item.price / 100 * 50);
+
+console.log(sales);
+
+</script>
+	
