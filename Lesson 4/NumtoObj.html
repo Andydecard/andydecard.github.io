@@ -1,0 +1,31 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+	 var thisNum = prompt('Введите число от 1 до 999 цифрой');
+	 function isInteger(thisNum) {
+     return (thisNum ^ 0) === thisNum;
+}
+	 if (thisNum > 999 || thisNum < 0) console.log('Введите число от 1 до 999 цифрой');
+	 if (Number.isInteger(thisNum) != true) console.log('Должно быть целое число');
+	 if ( !parseInt(thisNum) ) console.log('Нужно писать число!');
+
+	else { arr = thisNum.split('');
+	 var copy = new Object();
+	 copy = Object.assign(arr);
+	 copy.units = copy[0],
+	 copy.tens = copy[1],
+	 copy.hundereds = copy[2];
+	 delete copy[0];
+	 delete copy[1];
+	 delete copy[2];
+	 console.log(copy);}
+		
+
+	/*Эта функция мне не совсем понятна
+	    return {
+        thirdDigit: num % 10,
+        firstDigit: Math.floor(num / 100),
+        secondDigit: Math.floor(num / 10) % 10,*/
+
+</script>
+	
