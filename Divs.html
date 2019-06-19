@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Название документа</title>
+    <style> 
+        
+        /*Основная проблема - получилось сделать функцию при помощи getElementById, 
+        а если я пишу getElementByClassname  - возникли ошибки, и функция не выполнилась.
+        Пришлось прописывать для каждой из трёх картинок отдельно Id, что привело к существенному усложнению простого кода.*/
+
+   	#about {
+    		display: none;
+        float: left;
+        padding-bottom: 130px;
+        margin-right: 200px;
+    	}
+        
+    #product {
+    		display: block; 
+        }
+    
+    #about1 {
+    		display: none;
+        padding-bottom: 130px;
+        margin-right: 200px;
+        float: left;
+    	}
+        
+    #product1 {
+    		display: block;            
+        }
+    #about2 {
+    		display: none;
+        padding-bottom: 130px;
+        margin-right: 200px;
+        float: left;
+    	}
+        
+    #product2 {
+    		display: block;            
+        }
+        
+        .float {
+            float: left;
+            width:32%;
+            padding: 3px;
+        }
+                .float1 {
+            float: left;
+                    width:32%;
+        }
+                .float2 {
+            float: left;
+                    width:32%;
+        }
+    </style>
+  </head>
+  <body>
+        <div class="float">
+  	    <div id="product">
+  		<div class="productName">Product 1 name</div>
+  		<img src="https://i.ibb.co/z5wqLSf/5c1660422756ba81261c4118-1.jpg"> <br>
+  		</div>
+  		<div id="about">
+  			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id ultricies lacus, sed auctor mauris. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id ultricies lacus, sed auctor mauris. In hac habitasse platea dictumst.  
+  		</div>
+  		<button type="button" onclick="slide()" >Click Me</button>
+        </div>
+        <div class="float1">
+  		  	<div id="product1">
+  		<div class="productName">Product 1 name</div>
+  		<img src="https://i.ibb.co/z5wqLSf/5c1660422756ba81261c4118-1.jpg"> <br>
+  		</div>
+  		<div id="about1">
+  			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id ultricies lacus, sed auctor mauris. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id ultricies lacus, sed auctor mauris. In hac habitasse platea dictumst.  
+  		</div>
+  		<button type="button" onclick="slide()" >Click Me</button>
+  		</div>
+  		<div class="float1">  		  	<div id="product2">
+  		<div class="productName">Product 1 name</div>
+  		<img src="https://i.ibb.co/z5wqLSf/5c1660422756ba81261c4118-1.jpg"> <br>
+  		</div>
+  		<div id="about2">
+  			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id ultricies lacus, sed auctor mauris. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id ultricies lacus, sed auctor mauris. In hac habitasse platea dictumst.  
+  		</div>
+  		<button type="button" onclick="slide()" >Click Me</button>
+  		</div>
+       <script>
+function slide() {
+    var drop = document.getElementById("about");
+  
+    drop.setAttribute('style', 'display: block',);
+
+    var hide = document.getElementById('product');
+    
+    hide.setAttribute('style', 'display: none');
+    
+        var drop = document.getElementById("about1");
+  
+    drop.setAttribute('style', 'display: block',);
+
+    var hide = document.getElementById('product1');
+    
+    hide.setAttribute('style', 'display: none');
+    
+            var drop = document.getElementById("about2");
+  
+    drop.setAttribute('style', 'display: block',);
+
+    var hide = document.getElementById('product2');
+    
+    hide.setAttribute('style', 'display: none');
+    
+}
+    </script>
+  </body>
+</html>
